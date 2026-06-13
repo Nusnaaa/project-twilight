@@ -1,0 +1,47 @@
+05/06/2026:
+
+I've just used chatgpt to put together a trend study. I don't understand large portions of the code, but i can do a bit of problem solving. Maybe I need to redo py4e and
+some other python courses to get up to speed.
+
+Anyway, I set the initial MTOW as 20kg, primarily based on this: https://seabee.no/mugin-2-pro-2930mm
+
+I want the drone to feel heavy and serious rather than a toy. If not for that, I could have gone with something lighter that conformed beter to the trend showcased
+by the data.
+
+10/06/2026:
+It's been a while. 
+
+I've been working and I took some time to start learning python more properly for this project since I realised while performing the trend study - with chatgpt- that my 
+skills there are severly lacking.
+
+Around the same time, I realised that I don't have enough time to design the drone with a custom electrical solution since I have no foundations in electronics and it's 
+not as though this is all I do - or want to do -  day in and day out. 
+
+For now, I will use my degree to design and build all the aeromechanical components. The electronics wil be off the shelf components. 
+
+In future iterations, the electronics will be custom made and custom built. Embedded systems and user-facing systems will also be cutom made.
+
+But that is for iterations later in the future.
+
+13/06/2026:
+I'm reading raymer. Today is a 'take notes' day where I decide the work I need to do when I have to do when it's time to put the equations in a python script and get some
+numbers.
+
+Empy weight will consist of the airframe and electrical systems. The fuel weight will be the weight of the battery so I need to calculate a rough estimate. The payload
+will be the size of the camera module, so i need a value for that too. 
+
+I guess we're designing for a simple mission profile here and since the weight doesn't change as the battery is used. Because battery weight is constant, making a simple
+estimation of the seize i need for the distance i want at the speed I want to travel at a specific wattage should be enough for now.
+
+It would be helpful to look into the following battery metrics at some point during initial design: energy consumption, efficiency, electric range. 
+
+Those should help me decide how large the battery would end up being(in terms of charge held and physical space in the drone).
+
+Tasks for the next session:
+- Revise MTOW/design weight
+- Decide mission range if not already satisfactory
+- Estimate L/D from aspect ratio/wetted area. This is a propeller aircraft
+- Find assumptions for the aircraft equipmrnt weights (wiring, airframe, camera and sensor modules, etc). a good estimate might be 20-30% the MTOW or design weight
+- Perform thye first full sizing of the drone
+- Maybe do some range studies per Raymer's suggestions at the end of chapter 1
+

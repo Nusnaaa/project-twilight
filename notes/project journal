@@ -38,6 +38,7 @@ It would be helpful to look into the following battery metrics at some point dur
 Those should help me decide how large the battery would end up being(in terms of charge held and physical space in the drone).
 
 Tasks for the next session:
+- Make a conceptual sketch
 - Revise MTOW/design weight
 - Decide mission range if not already satisfactory
 - Estimate L/D from aspect ratio/wetted area. This is a propeller aircraft

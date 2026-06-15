@@ -46,3 +46,19 @@ Tasks for the next session:
 - Perform thye first full sizing of the drone
 - Maybe do some range studies per Raymer's suggestions at the end of chapter 1
 
+15/06/2026:
+I'm very quickly realising that the Raymer sizing method is very dependent on the idea that the aircraft being designed is powered by traditiona fossil fuels. This 
+assumption relies on the idea that the weight of the craft decreases the longer it is in operation. That is not how batteries work. But maybe I'm wrong. Maybe there's
+some quantum superposition bs that overcomplicates things for me.
+
+But I'm pretty sure that's not the case...
+
+I'll need to take a bit more time to research the batteries a bit more and find relationships based around batteries that mirror Raymer's calculations for cruise,
+loiter, etc. L/D will be fine to laeve as is, since it's based on aircraft configuration and overall geometry.
+
+I revised the design weight down to 15kg, by looking at the trend study again and using my gut? Hopefully it works out and I can explain why in a later note.
+
+The new + revised tasks for later today are:
+- Do a range trade study using battery-specific formulae
+- Calculate drone endurance based on battery-specific formula(not sure if range should be done first or not)
+- Perform first full sizing

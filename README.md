@@ -1,4 +1,4 @@
-# Drone Project Briefs
+# Drone Project Brief
 
 This project is focused on designing and developing a small unmanned aircraft/drone intended primarily for operation in Ghanaian conditions. The aim is to create a practical, low-altitude aircraft that can carry a small removable sensor or camera payload for basic survey, monitoring, mapping, or data-gathering missions.
 

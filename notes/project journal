@@ -62,3 +62,14 @@ The new + revised tasks for later today are:
 - Do a range trade study using battery-specific formulae
 - Calculate drone endurance based on battery-specific formula(not sure if range should be done first or not)
 - Perform first full sizing
+
+05/07/2026:
+Okay, I'm back now - and it's midnight. the heatwaves and other things took my attention away temporarily.
+
+In the time I've been away, I did a bit of research into the materials and manufacturing that may be truly viable for this project. I've landed on 3D printing since I can rapidly
+prototype components and iterate fast at a relativel low cost. Since the airframe and parts will be custom madse with bespoke dimensions for the most part, injection moulding, subtractive manufacturing etc would cost too much in tooling and setup - I don't have the time or money to dedicate to this.
+
+With that being said, I think it would be prudent to revise the MTOW/design weight, so I need to take a look  at the range study again/ do another one - see previous tasks.
+My gut says to start at around 5kg and size the craft for this new weight and the old weight of 15kg, iterate the sizing process for both until the final weight settles somewhere more reasonable.
+
+

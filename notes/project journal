@@ -32,7 +32,6 @@ will be the size of the camera module, so i need a value for that too.
 
 I guess we're designing for a simple mission profile here and since the weight doesn't change as the battery is used. Because battery weight is constant, making a simple
 estimation of the seize i need for the distance i want at the speed I want to travel at a specific wattage should be enough for now.
-
 It would be helpful to look into the following battery metrics at some point during initial design: energy consumption, efficiency, electric range. 
 
 Those should help me decide how large the battery would end up being(in terms of charge held and physical space in the drone).
@@ -48,10 +47,9 @@ Tasks for the next session:
 
 15/06/2026:
 I'm very quickly realising that the Raymer sizing method is very dependent on the idea that the aircraft being designed is powered by traditiona fossil fuels. This 
-assumption relies on the idea that the weight of the craft decreases the longer it is in operation. That is not how batteries work. But maybe I'm wrong. Maybe there's
-some quantum superposition bs that overcomplicates things for me.
+assumption relies on the idea that the weight of the craft decreases the longer it is in operation. That is not how batteries work. But maybe I'm wrong...
 
-But I'm pretty sure that's not the case...
+Though, I'm pretty sure that's not the case...
 
 I'll need to take a bit more time to research the batteries a bit more and find relationships based around batteries that mirror Raymer's calculations for cruise,
 loiter, etc. L/D will be fine to laeve as is, since it's based on aircraft configuration and overall geometry.
@@ -72,4 +70,27 @@ prototype components and iterate fast at a relativel low cost. Since the airfram
 With that being said, I think it would be prudent to revise the MTOW/design weight, so I need to take a look  at the range study again/ do another one - see previous tasks.
 My gut says to start at around 5kg and size the craft for this new weight and the old weight of 15kg, iterate the sizing process for both until the final weight settles somewhere more reasonable.
 
+
+14/07/2026:
+According to this article [https://beyondsky.xyz/blog/hardware/anatomy-of-a-drone-understanding-key-hardware-components], low KV rated motors are useful for aerial 
+photography - which is basically the use case for this drone. 
+
+I am going with a KV of 800 - 1000 for now and may adjust it later. I got this value from: [https://etonmmotor.com/what-is-kv-rating-in-brushless-motors-and-how-to-calculate-it/#elementor-toc__heading-anchor-5]
+
+This KV rating functions similarly to SFC for fossil fuel powered craft it seems. With it, I should be able to calculate what size battery I need based on my deisred
+endurance and range. I can calculate thrust using P_A = prop_efficiency * P_eng = Thrust * Velocity, where P_A is the available power, prop_effficiency is the efficiency
+of the propeller engine (motor in this case) and, P_eng is the poer of the engine (or motor in this case).
+
+I can calculate the max power the motor can generate by checking if the manufacturer lists it directly, or estimating it by using P = IV on listed max current and max 
+voltage info.
+
+I plan to calculate power available as lower than the listed maximum for the motor to allow for some breathing room.
+
+The above may have been an unnecessary tangent, but at least I have power now...
+
+I went on too many tangents today.
+
+The project needs more structure than I have put in place, so i will take a bit of time to fix that. I need clearer requirements (with mandatory reuirements vs desirable ones etc.), more research, etc.
+
+This needs to follow a more traditional aerospace design approach(requirements -> conceptual -> detailed etc.) for my own sanity given my limited time to work on this - I cant lose 2 hours of work to tangents like today too often or the project will stall.
 
